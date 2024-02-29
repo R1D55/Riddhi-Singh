@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/64f173a07b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <nav>
+        <img src="./goodfellow.jpg" alt="" width="100px"> 
+          <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox" id="toggler">
+          <div id="for"> 
+            <ul class="list"> 
+              <li><a class="good-trans" href="./Goodfellow.html">HOME</a> </li>
+              <li><a class="good-trans" href="./about.html">ABOUT</a></li> 
+              <li><a class="good-trans" href="#">SERVICES</a></li>
+              <li><a class="good-trans" href="#">EVENTS</a></li>
+              <li><a class="good-trans" href="#">PRESS</a></li>
+              <li><a class="good-trans" href="#">FAQS</a></li>
+              <li><a class="good-trans" href="#">CAREER</a></li>
+              <li><a class="good-trans" href="#">CONTACT</a></li>
+            </ul> 
+          </div>
+      </nav>
+    <div class="slider">
+        <div class="controls">
+          <div class="up">
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+          <div class="down">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="left">
+            <div>
+              <h3 class="lg-heading-green">Discover the joy of Quality time</h3>
+              <p class="para-brown">Be it nothing but chitchat, reminiscing stories, sharing troubles, or biscuits and tea, playing carrom together or simply watching TV, our Goodfellows are eager to lend a listening ear.</p>
+            </div>
+            <div>
+              <h3 class="lg-heading-green">Bridge generation gap with tech-savvy youth</h3>
+              <p class="para-brown">Your Goodfellow will sit down for as long as you need to explain the basics of smartphones and gadgets, social media lingo and online deliveries. You name it, we teach it!</p>
+            </div>
+            <div>
+              <h3 class="lg-heading-green" >Find joy in Walking together</h3>
+              <p class="para-brown">We surely love a good walk would love to keep you company. Be it escorting you to a friend’s house or being your friend at the park, we have your back.</p>
+            </div>
+            <div>
+              <h3 class="lg-heading-green">Companionship for Daily task </h3>
+              <p class="para-brown">Getting your daily supplies, medicines or shopping at the mall? Our Goodfellows make excellent shopping companions. Or let your Goodfellow accompany you to the doctor’s clinic. It is always good to have someone in the waiting room.</p>
+            </div>
+            <div>
+              <h3 class="lg-heading-green">Discover the Thrill of something new</h3>
+              <p class="para-brown">Try an experience at that fancy restaurant or watch a new movie, learn a new hobby, or explore an old one!
+                Our Godfellows will take you to the best of places for an outing of your choice.</p>
+            </div>
+          </div>
+          <div class="right">
+            <div><img src="./img/IMG_8127.jpg" alt="" ></div>
+            <div><img src="./img/IMG_8124.jpg" alt="" ></div>
+            <div><img src="./img/IMG_8123.jpg" alt="" ></div>
+            <div><img src="./img/IMG_7498.jpg" alt="" ></div>
+            <div><img src="./img/IMG_8135.jpg" alt="" ></div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <h3 class="lg-heading-green text">Follow us Along our Journey</h3>
+          
+          <div class="icon-con">
+            <i class="fa-brands fa-youtube fa-xl icon" ></i>
+            <i class="fa-brands fa-facebook fa-xl icon" ></i>
+            <i class="fa-brands fa-linkedin fa-xl icon" ></i>
+            <i class="fa-brands fa-instagram fa-xl icon" ></i>
+          </div>
+          
+          <ul class="icon-ali">
+            <li>
+              <i class="fa-solid fa-phone fa-lg icon "></i>
+              <a style="text-decoration: none;" href="teL:+91 7738896930">+91 7738896930</a>
+            </li><br>
+            
+            <li>
+              <i class="fa-solid fa-envelope fa-lg icon"></i>
+              <a style="text-decoration: none;" href="mailto:singheliza29@gmail.com">singheliza29@gmail.com</a>
+          </li>
+        </ul>
+        
+        <div class="reserved">
+        <p>
+          © 2023 Goodfellows | All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<script> 
+     let slider = document.querySelector(".slider");
+        let currentSlide = 0;
+        let totalSlides = slider.querySelectorAll(".wrapper .left > div").length - 1;
+
+        slider.querySelector(".controls .up").addEventListener("click",function(){
+        if(currentSlide == 0){
+          return;
+    }
+        currentSlide--;
+        slider.querySelector(".wrapper .left div").style.marginTop = `${currentSlide*-100}vh`;
+        slider.querySelector(".wrapper .right div").style.marginTop = `${(totalSlides-currentSlide)*-100}vh`;
+    });
+        slider.querySelector(".controls .down").addEventListener("click",function(){
+        if(currentSlide == totalSlides){
+        return;
+    }
+        currentSlide++;
+        slider.querySelector(".wrapper .left div").style.marginTop = `${currentSlide*-100}vh`;
+        slider.querySelector(".wrapper .right div").style.marginTop = `${(totalSlides-currentSlide)*-100}vh`;
+    });  
+    
+  </script>
+</body>
+</html>

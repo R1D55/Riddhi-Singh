@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0; 
+}
+  
+body{ 
+  font-family: 'Playfair Display', serif;
+  /* background-color:#9dd3ff ; */
+  overflow: hidden;
+}
+
+.project{
+  height: 100vh;
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 15px;
+  background-color: #9dd3ff;
+  box-shadow: 0 0 20px 0 #aaa;
+}
+  
+  nav a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: .2s ease-in;
+}
+  
+  nav a:hover{
+  color: white;
+  background: #000000;
+  padding: 5px;
+  border-radius: 4px;
+  /* box-shadow: 0 0 20px 0 #ffffff; */
+}
+
+.list{
+  display: flex;  
+  list-style: none;
+  gap: 25px;
+}
+
+#toggler , label{
+  display: none;
+
+}
+
+label i{
+  color: #141e30;
+}
+
+.bg{
+  background: #9dd3ff;
+  margin-top: 30px;
+  box-shadow: 0 0 20px 0 #aaa;
+}
+
+h1{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.flex-item{
+  display: flex;
+  height:auto;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.flex-item a{
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+.flex-item a:hover{
+  color: #4d4b4b;
+}
+
+.flex-item h3{
+  text-align: center;
+}
+
+.flex-item h3:hover{
+  color: #4d4b4b;
+}
+
+.flex-item img{
+  margin: 20px 30px 0px 20px;
+  box-shadow: 0 0 10px 0 #aaa;
+}
+
+.flex-item img:hover{
+  opacity: 0.8;
+}
+
+
+.footer-heading {
+  background: #9dd3ff;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px 0 0 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #9dd3ff;
+  color: #000000;
+  text-align: center;
+  box-shadow: 0 0 10px 0 #aaa;
+}
+
+@media screen and (max-width:650px){
+  body{
+    overflow: scroll;
+  }
+
+  .for{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  label{
+    display: inline-flex;
+  } 
+  #toggler:checked~.for{
+    max-height:100%;
+  } 
+  .list{
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+  }
+  .flex-item{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 130px;
+  }
+  }
+
+
+
+
+
+  
+
+
+
+

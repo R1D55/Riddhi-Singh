@@ -1,0 +1,353 @@
+    *{
+        padding: 0;
+        margin: 0; 
+    } 
+   
+body{
+    font-family: 'Playfair Display', serif;
+    overflow-y: hidden;
+}    
+
+nav{ 
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px; 
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0); 
+} 
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.list{ 
+   display: flex; 
+   list-style: none;
+   gap: 25px;
+}
+
+#toggler , label{
+    display: none;
+    
+}
+
+label i{
+    color: #fff;
+}
+
+
+.lg-heading{
+    /* border: 2px solid white ; */
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    width: 20px;
+    height: 20px; 
+    transition-property: width;
+    transition-duration: 3s;
+    /* transition-timing-function:; */
+    transition-delay:1s;
+}
+
+.lg-heading:hover{
+    width: 40px;
+    height:40px;
+    /* border: 100%; */
+    border-radius: 10%;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 #aaa;
+    
+}
+
+a{
+    color: navy;
+    text-decoration: none;
+} 
+
+a:hover{
+    color: #f5e1e8;
+}
+
+
+.anc{
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* .logo{
+    background-image: linear-gradient(grey, rgb(68, 67, 67));
+    border: 2px solid;
+    float: left;
+    padding: 10px 30px;
+} */
+
+.bg{
+    background:url(../img/nightsky.webp); 
+    /* background-size: stretch; */
+    /* opacity: 0.9; */
+    box-shadow: 20px 0 20px 0 #aaa;
+    color: #fff;
+    height: 100vh;
+}
+
+#get{
+    text-align: center;
+    /* border: 2px solid; */
+    padding: 0px 0px;
+}
+
+
+.con{
+    display: flex;
+    /* border: 2px solid; */
+}
+
+.icon-align{
+    /* border: 2px solid; */
+    padding: 5px;
+    margin-top: 90px;
+}
+
+#icon-mail{
+    /* position: relative; */
+    /* z-index: 0; */
+    background-color: #ffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    padding:5px;
+    box-shadow: 0 0 20px 0 #aaa;
+} 
+
+#icon-mail:hover{
+    transform: scale(1.2);
+    padding-bottom: 5px;
+}
+
+.icon{
+    /* position: relative;
+    z-index: 0; */
+    background-color: #ffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #aaa;
+    margin-bottom:5px;
+    transition: transform .2s;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+    padding-bottom: 5px;
+}
+
+
+
+/* .txt{
+    border: 2px solid;
+    text-align: right;
+} */
+
+
+#touch{
+    position: relative;
+    /* display: inline-block; */
+    width: 40%;
+    font-size: 15px; 
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+    margin: 60px 150px 100px 200px;
+    background: #20336aac; 
+    border: 2px solid #ffffff;
+    border-radius: 4%;
+    box-shadow: 0 0 20px #aaa;
+    animation: move 2s infinite;
+}
+@keyframes move {
+    0% {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2), 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+}
+
+
+form{
+    top: 10px;
+    left: 200px;
+    width: 60%;
+    max-width: 500px;
+}
+
+input,textarea{
+    margin-bottom: 5px;
+    width: 100%;
+    outline: 0;
+    border: 2px solid rgba(255, 255, 255, 0.911);
+    background-color: #20336c78;
+    color: #fff;
+}
+.form-txt{
+    display: contents;
+    height: 100%;
+    /* padding: 10px 0 10px; */
+    cursor: text;
+}
+.ali{
+    display: flex;
+    gap: 10px;
+    flex-basis: 30%;
+}
+
+#button{
+   font-size: 15px;
+   background-color:#20336c;
+   border: #00000000;
+   border-radius: 8px;
+   color: #ffff;
+   padding: 4px;
+   transition:.4s ease;
+   bottom: pointer;
+}
+
+#button:hover{
+    background: white;
+    color: #20336c;
+    box-shadow: 0 0 20px 0 #aaa;
+}
+
+
+.footer-heading {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 50px 0 0 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width:650px){
+    body{
+        overflow-y: scroll;
+    }
+    .bg{
+        background:url(../img/nightsky.webp);
+        background-size: repeat;
+        /* opacity: 0.9; */
+        box-shadow: 20px 0 20px 0 #aaa;
+        color: #fff;
+        height: 90%;
+    }
+
+    .for{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden; 
+    }
+
+    label{
+        display: inline-flex;
+    }
+    
+    #toggler:checked~.for{
+        max-height:100%;
+    }
+
+    .list{
+        flex-direction: column;
+    align-items: center;
+    padding:20px;
+    }
+    
+    #get{
+        padding-top: 10px;
+        font-size: 45px;
+    }
+    
+    .con{
+        display:flex;
+        flex-direction: column;
+        /* border: 2px solid; */
+        margin: 70px 10px 0 0;
+    }
+    
+    .icon-align{
+        position: fixed;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-right: 10px;
+        height:10px;
+        width: 10%;
+    }
+    
+    #touch{
+        font-size: 16px;
+        border: 2px solid;
+        margin-top: 10px;
+        margin-bottom: 90px;
+        right: 20px;
+        width: 50%;
+    }
+
+    .form-container{
+        /* display: inline-flex; */
+        font-size: 20px;
+        width: 400px;
+        padding:10px;
+        margin-top: 150px;
+        margin-left: 190px;
+        /* border: 2px solid; */
+    }
+    #button{
+        transition:.4s ease;
+        bottom: pointer; 
+    }
+    
+    #button:hover{
+        background: white;
+        color: #20336c;
+        box-shadow: 0 0 20px 0 #aaa;
+    }
+
+    .footer-heading {
+        background: black;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+        margin: 50px 0 0 0;
+    }
+    
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+        color: #fff;
+        text-align: center;
+    }
+}
+
+
